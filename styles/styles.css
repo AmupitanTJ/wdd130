@@ -18,7 +18,7 @@ h1{
 }
 
 aside{
-    margin: 20px;
+    margin: 40px;
     padding: 20px;
     width: 25%;
     background-color: #ddd;
@@ -30,14 +30,16 @@ aside{
 aside img{
     width: 200px;
     height: auto;
-    margin: 10px 0;
+    margin: 10px;
     box-shadow:  0 0 30px #333;
     border: 1px solid rgb(0 0 0 /10%);
     padding: 5px;
 }
 
 p{
-    padding: 0;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #ddd;
 }
 
 footer{
@@ -53,7 +55,10 @@ nav{
 }
 nav a{
     color: #fff;
-    padding: 5px;
+    padding: 10px;
     margin: 4px;
-    display: block;
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(88, 127, 199);
+    border-radius: 30px;
 }
