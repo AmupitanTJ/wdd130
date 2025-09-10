@@ -57,7 +57,7 @@ nav a{
     color: #fff;
     padding: 10px;
     margin: 4px;
-    display: inline-block;
+    display: block;
     text-decoration: none;
     background-color: rgb(88, 127, 199);
     border-radius: 30px;
