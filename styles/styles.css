@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 
 body{
@@ -11,6 +12,14 @@ main{
     margin: 20px;
     padding: 20px;
     max-width: 800px;
+}
+
+.profile{
+    float: right;
+    margin: 15px 10px 10px 5px;
+    border-radius: 8%;
+    box-shadow: 0 0 20px #333;
+    border: 1px solid rgb(0 0 0 /10%);
 }
 
 h1{
@@ -25,6 +34,12 @@ aside{
     color: #333;
     border: 1px solid rgb(0 0 0 /0.2);
     text-align: center;
+}
+
+aside h2{
+    position: absolute;
+    left: 150px;
+    top: 659px;
 }
 
 aside img{
@@ -61,4 +76,15 @@ nav a{
     text-decoration: none;
     background-color: rgb(88, 127, 199);
     border-radius: 30px;
+}
+
+
+/*Class Selectors  */
+
+.box{
+    border: 1px solid #333;
+    padding: 1rem;
+    margin: 1rem;
+    background-color: bisque;
+    color: #333;
 }
