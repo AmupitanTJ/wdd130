@@ -33,10 +33,21 @@ header {
     gap: 2rem;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    padding: 1rem 1rem;
+    padding: 1rem 4rem;
     text-align: center;
     font-family: var(--body-font);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: normal;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    background-color: #2f4d6b;
+    padding: 8px 16px;
+    border-radius: 4px;
 }
 
 h1, h2 {
@@ -61,7 +72,7 @@ article {
 .hero{
   position: relative;
   width: 100%;
-  height: 500px; /* or use min-height for responsiveness */
+  height: 500px; 
   overflow: hidden;
   border-radius: 8px;
 }
@@ -77,7 +88,7 @@ article {
 
 h1{
     position: absolute;
-    top: 200px;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -90,14 +101,12 @@ h1{
 
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 40px;
+    margin:  180px 40px;
     background: rgba(255, 255, 255, 0.85);
     color: var(--text-color);
     padding: 1rem 1.5rem;
     border-radius: 8px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.10);
-    margin-right: 35px;
 }
 
 .hero article img {
@@ -125,7 +134,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 10px 10px;
+    padding: 10px 10px 10px 450px;
     background-color: var(--secondary-color);
     color: var(--text-color);
     margin-top: 0.5rem;
@@ -148,9 +157,11 @@ footer {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 15px;
-    margin-top: 10px;
+    margin: 10px 0;
+
 }
 .history{
+    width: 100%;
     left: 40px;
     background: rgba(255, 255, 255, 0.85);
     color: var(--text-color);
@@ -163,32 +174,38 @@ footer {
 
 
 .history h2{
+    position: relative;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    font-weight: bold;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 2rem;
-    width: 150px;
-    margin: auto; 
+    border-radius: 8px;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.history-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
 }
   
-.history-wrapper {
-  display: flex;
-  align-items: center;      
-  justify-content: center;   
-  gap: 20px;                 
+.history-text {
+  flex: 1;
+  text-align: justify;
 }
 
-.history-img {
-  float: none;
-  width: 250px;                   
-  margin: 10px 20px 10px 20px;
-  display: block;
-  border-radius: 8px;
-
+.history-image img {
+    width: 200px;
+    max-width: 250px;
+    border-radius: 8px;
 }
-
-
 
 
 .adventure-images {
