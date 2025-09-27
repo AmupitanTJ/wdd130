@@ -27,9 +27,13 @@ header, main, footer {
 }
 
 header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    gap: 2rem;
     background-color: var(--secondary-color);
     color: var(--text-color);
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     text-align: center;
     font-family: var(--body-font);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -104,4 +108,119 @@ h1{
     width: 200px;
     height: auto;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 1rem 0;
+    padding: 0.5rem 0;
+}
+
+footer {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+}
+
+
+.socialmedia a img{
+    display: flex;
+    justify-self: flex-end;
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+    
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+.history{
+    left: 40px;
+    background: rgba(255, 255, 255, 0.85);
+    color: var(--text-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    margin-right: 35px;
+}
+
+
+
+.history h2{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 2rem;
+    width: 150px;
+    margin: auto; 
+}
+  
+.history-wrapper {
+  display: flex;
+  align-items: center;       /* vertically align text with image */
+  justify-content: center;   /* keep it balanced */
+  gap: 20px;                 /* spacing between image and text */
+}
+
+.history-img {
+  float: none;
+                      /* make text wrap */
+  width: 250px;                   /* control image size */
+  margin: 10px 20px 10px 20px;    /* space around image */
+  display: block;
+  shape-outside: inset(0);
+  border-radius: 8px;
+
+}
+
+
+
+
+.adventure-images {
+  display: flex;
+  justify-content: space-around;  /* space between figures */
+  flex-wrap: wrap;                /* allow wrapping on smaller screens */
+  margin-top: 5px;
+}
+
+.adventure-images figure {
+  text-align: center;   /* center caption under each image */
+  margin: 10px;
+}
+
+.adventure-images img {
+  border-radius: 6px;
+  width: 200px;
+  height: auto;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: block;
+  margin: 0 auto;
+}
+
+.adventure-images figcaption {
+  font-size: 14px;
+  color: #aca6a6;
+  margin-top: 5px;
+}
+
+.adventure h2 {
+  text-align: center;
+  margin-bottom: 10px;
 }
