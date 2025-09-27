@@ -21,7 +21,7 @@ body {
 }
 
 header, main, footer {
-    padding: 1rem;
+    padding-bottom: 20px;
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -37,6 +37,7 @@ header {
     text-align: center;
     font-family: var(--body-font);
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 20px;
 }
 
 header a{
@@ -210,14 +211,14 @@ footer {
 
 .adventure-images {
   display: flex;
-  justify-content: space-around;  
+  justify-content: space-between; 
+  align-items: center; 
   flex-wrap: wrap;                
   margin-top: 5px;
 }
 
 .adventure-images figure {
   text-align: center;  
-  margin: 10px;
 }
 
 .adventure-images img {
