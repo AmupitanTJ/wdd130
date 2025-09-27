@@ -134,7 +134,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     text-align: center;
-    padding: 10px 10px 10px 450px;
+    padding: 10px 10px 10px 360px;
     background-color: var(--secondary-color);
     color: var(--text-color);
     margin-top: 0.5rem;
