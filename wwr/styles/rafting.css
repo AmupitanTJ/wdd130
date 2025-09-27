@@ -174,18 +174,16 @@ footer {
   
 .history-wrapper {
   display: flex;
-  align-items: center;       /* vertically align text with image */
-  justify-content: center;   /* keep it balanced */
-  gap: 20px;                 /* spacing between image and text */
+  align-items: center;      
+  justify-content: center;   
+  gap: 20px;                 
 }
 
 .history-img {
   float: none;
-                      /* make text wrap */
-  width: 250px;                   /* control image size */
-  margin: 10px 20px 10px 20px;    /* space around image */
+  width: 250px;                   
+  margin: 10px 20px 10px 20px;
   display: block;
-  shape-outside: inset(0);
   border-radius: 8px;
 
 }
@@ -195,13 +193,13 @@ footer {
 
 .adventure-images {
   display: flex;
-  justify-content: space-around;  /* space between figures */
-  flex-wrap: wrap;                /* allow wrapping on smaller screens */
+  justify-content: space-around;  
+  flex-wrap: wrap;                
   margin-top: 5px;
 }
 
 .adventure-images figure {
-  text-align: center;   /* center caption under each image */
+  text-align: center;  
   margin: 10px;
 }
 
