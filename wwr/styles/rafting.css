@@ -87,7 +87,7 @@ article {
     float: right;
 }
 
-h1{
+.about_h1{
     position: absolute;
     top: 20%;
     left: 50%;
@@ -139,7 +139,7 @@ footer {
     background-color: var(--secondary-color);
     color: var(--text-color);
     margin-top: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
 }
 
@@ -239,4 +239,157 @@ footer {
 .adventure h2 {
   text-align: center;
   margin-bottom: 10px;
+}
+
+
+
+.map_hero {
+  display: flex;
+  flex-direction: column; /* stack paragraphs vertically */
+  align-items: center;     /* center horizontally */
+  text-align: center;
+  gap: 0;
+  width: 100%;
+  height: 250px; 
+  border-radius: 8px;
+  margin-bottom: 20px;                 /* no extra space between them */
+}
+    
+
+
+.map_hero p, h1 {
+  margin: 0 auto;               /* remove default <p> spacing */
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  padding: 4px 8px; 
+  margin-top: 1px;      
+} 
+
+.map{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  gap: 20px; /* Space between columns */
+  padding: 20px;
+  color: #1d1c1c;
+}
+
+.map iframe {
+  width: 100%;
+  height: 450px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}   
+
+.form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  padding-top: 30px;
+}
+
+.form form {
+  display: grid;
+  grid-template-columns: 150px 1fr; /* labels column | inputs column */
+  gap: 15px 20px; 
+  align-items: center;
+}
+
+
+.form .radio,
+.form textarea,
+.form select {
+  width: 100%;
+  grid-column: span 1.5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.form textarea, {
+  grid-column: span 2; /* textarea spans both columns */
+  min-height: 120px;
+  resize: vertical;
+}
+
+.checkbox {
+    grid-column: span 2; /* checkbox spans both columns */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+
+}
+
+
+
+.form button {
+  grid-column: span 2; /* button spans both columns */
+  padding: 12px;
+  font-size: 16px;
+  background: #0066cc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background: #004999;
+}
+
+/* Container for all radio buttons */
+.radio-group {
+  display: flex;
+  flex-direction: column; /* stack radios vertically */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+
+.radio-group label {
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+input{
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+
+.executives{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+    margin-top: 20px;
+}
+
+.executives figure {
+    text-align: center;  
+}
+
+.executives img {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: block;
+    margin: 0 auto;
+    width: 150px;          /* fixed width */
+    height: 150px;         /* fixed height */
+    object-fit: cover;     /* crops image neatly */
+    border-radius: 8px;    /* optional: rounded corners */
+    margin:0 20px 0 20px;
 }
