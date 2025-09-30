@@ -232,7 +232,11 @@ footer {
 
 .adventure-images figcaption {
   font-size: 14px;
+<<<<<<< HEAD
   color: #f1efef;
+=======
+  color: #f1efef
+>>>>>>> ad5b33a0f4becfb3d54116b2fd4ea02529179699
   margin-top: 5px;
 }
 
@@ -240,6 +244,7 @@ footer {
   text-align: center;
   margin-bottom: 10px;
 }
+<<<<<<< HEAD
 
 
 
@@ -393,3 +398,5 @@ input{
     border-radius: 8px;    /* optional: rounded corners */
     margin:0 20px 0 20px;
 }
+=======
+>>>>>>> ad5b33a0f4becfb3d54116b2fd4ea02529179699
