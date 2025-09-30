@@ -312,7 +312,7 @@ footer {
   font-size: 14px;
 }
 
-.form textarea,{
+.form textarea{
   grid-column: span 2; /* textarea spans both columns */
   min-height: 120px;
   resize: vertical;
@@ -405,4 +405,9 @@ input{
     object-fit: cover;     /* crops image neatly */
     border-radius: 8px;    /* optional: rounded corners */
     margin:0 20px 0 20px;
+}
+
+iframe{
+    width: 600;
+    height: 45;
 }
