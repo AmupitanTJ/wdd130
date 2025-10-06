@@ -342,7 +342,7 @@ footer {
 }   
 
 
-.form button {
+.form button, .submit {
   grid-column: span 2; /* button spans both columns */
   padding: 12px;
   font-size: 16px;
@@ -410,4 +410,131 @@ input{
 iframe{
     width: 600px;
     height: 45px;
+}
+
+
+.newsletter {
+  display: flex;
+  flex-direction: column;  /* Stack items vertically */
+  align-items: center;     /* Center horizontally */
+  justify-content: center; /* Center vertically (optional) */
+  text-align: center;
+  min-height: 100vh;       /* Optional: centers vertically on screen */
+  background-color: #aac2f1;
+  font-family: Arial, sans-serif;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.newsletter form {
+  display: grid;
+  grid-template-columns: 1fr; /* single column layout */
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;          /* limit form width */
+  margin-top: 15px;
+  background-color: #f5f8fa;
+  padding: 20px;
+  border-radius: 8px;
+  color: #4d4b4b;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.newsletter label {
+  align-self: flex-start; /* keep labels aligned left within the column */
+  font-weight: 600;
+}
+
+.newsletter .submit {
+  width: 100%;
+  padding: 10px;
+  background-color: #3289ec;
+  color: rgb(63, 61, 61);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.newsletter .submit:hover {
+  background-color: #005fcc;
+}
+
+
+.rafting-grid {
+  text-align: center;
+  padding: 40px;
+  background-color: #f5f8fa;
+  font-family: Arial, sans-serif;
+  background-origin: padding-box;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.rafting-grid h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.grid-container img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.offerings {
+  grid-column: 1 / -1; /* spans all 3 columns */
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.purpose {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.purpose h3, .offerings h3, p {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+
+
+.click {
+    color: #d9e6f3;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #004080;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.click:hover {
+    background-color: #be6b0b;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+
 }
