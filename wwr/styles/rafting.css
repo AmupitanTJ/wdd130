@@ -280,6 +280,7 @@ footer {
   border: 0;
   border-radius: 8px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  margin-top: 50px;
 }   
 
 .form {
@@ -291,6 +292,7 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   gap: 15px;
   padding-top: 30px;
+  margin-top: 50px;
 }
 
 .form form {
