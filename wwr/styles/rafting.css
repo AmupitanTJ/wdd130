@@ -312,6 +312,8 @@ footer {
   font-size: 14px;
 }
 
+
+
 .form textarea{
   grid-column: span 2; /* textarea spans both columns */
   min-height: 120px;
@@ -664,4 +666,5 @@ td{
     background-color: white;
     color: #333;
 }
+
 
