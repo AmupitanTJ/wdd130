@@ -22,6 +22,7 @@ body {
 
 header, main, footer {
     padding-bottom: 20px;
+
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -65,7 +66,7 @@ article {
 }
 
 
-.socialmedia a{
+.social-media a{
     margin: 0 10px;
     text-decoration: none;
 }
@@ -78,6 +79,12 @@ article {
   border-radius: 8px;
 }
 
+#fullname, #email, #message{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 6px;
+}
 
 .hero img{
     width: 100%;
@@ -87,7 +94,7 @@ article {
     float: right;
 }
 
-.about_h1{
+.about-h1{
     position: absolute;
     top: 20%;
     left: 50%;
@@ -137,14 +144,20 @@ footer {
     text-align: center;
     padding: 10px 10px 10px 360px;
     background-color: var(--secondary-color);
-    color: var(--text-color);
+    color: #fdfcfc;
     margin-top: 0.5rem;
     font-size: 1.1rem;
     box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
 }
 
+footer p{
+    font-size: 1.3rem;
+    font-weight: normal;
+    color: #0c0404;
+}
 
-.socialmedia a img{
+
+.social-media a img{
     display: flex;
     justify-self: flex-end;
     width: 40px;
@@ -153,7 +166,7 @@ footer {
     
 }
 
-.socialmedia{
+.social-media{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
@@ -163,7 +176,6 @@ footer {
 }
 .history{
     width: 100%;
-    left: 40px;
     background: rgba(255, 255, 255, 0.85);
     color: var(--text-color);
     padding: 1rem 1.5rem;
@@ -309,7 +321,7 @@ footer {
   width: 100%;
   grid-column: span 1.5;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #525050;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -320,7 +332,10 @@ footer {
   grid-column: span 2; /* textarea spans both columns */
   min-height: 120px;
   resize: vertical;
+  border: #0c0404;
 }
+
+
 
 .checkbox {
     grid-column: span 2; /* checkbox spans both columns */
@@ -350,7 +365,7 @@ footer {
   grid-column: span 2; /* button spans both columns */
   padding: 12px;
   font-size: 16px;
-  background: #0066cc;
+  background: #052444;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -382,7 +397,6 @@ footer {
 
 input{
     padding: 8px;
-    border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 14px;
 }
@@ -431,6 +445,12 @@ iframe{
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
+.newsletter p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #161515;
+}
+
 .newsletter form {
   display: grid;
   grid-template-columns: 1fr; /* single column layout */
@@ -447,7 +467,7 @@ iframe{
 .newsletter input {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #8d8888;
   border-radius: 6px;
 }
 
@@ -459,8 +479,8 @@ iframe{
 .newsletter .submit {
   width: 100%;
   padding: 10px;
-  background-color: #3289ec;
-  color: rgb(63, 61, 61);
+  background-color: #004080;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -528,16 +548,15 @@ iframe{
 
 
 .click {
-    color: #d9e6f3;
+    color: #1d1919;
     font-weight: bold;
     text-decoration: none;
-    background-color: #004080;
     padding: 5px 10px;
     border-radius: 4px;
 }
 
 .click:hover {
-    background-color: #be6b0b;
+    background-color: #062c52;
     color: #ffffff;
     transition: background-color 0.3s ease;
 
@@ -655,7 +674,7 @@ table {
 
 th, td {
     padding: 1rem;
-    border: 1px solid #ccc;
+    border: 1px solid #2c2c2c;
     text-align: center;
 }
 
